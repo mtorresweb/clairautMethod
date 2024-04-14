@@ -1,0 +1,52 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  justify-content: center;
+  gap: 2rem;
+}
+
+math-field {
+  box-sizing: border-box;
+  padding: 0.5em;
+  width: 600px;
+  font-size: 1.5em;
+  border-radius: 8px;
+  border: 1px solid #999;
+}
+
+#options {
+  display: flex;
+  max-width: 600px;
+  width: 100%;
+}
+
+#options > button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  border: 1px solid #673ab7;
+  border-radius: 0 8px 8px 0;
+  background-color: transparent;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  color: #673ab7;
+}
+
+#options > button.active {
+  background-color: #673ab7;
+  color: white;
+}
+
+#options > button:hover {
+  background-color: #673ab7;
+  color: white;
+}
+
+#options > button > svg {
+  width: 100%;
+  height: 100%;
+}
